@@ -1,0 +1,109 @@
+.landing{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 20vh);
+    .container{
+        display: flex;
+        height: 100%;
+        width: 90%;
+        align-items: center;
+        .categories{
+            flex: 1;
+            background: #FFF;
+            box-shadow: 1px 1px 6px 0px #aeaeae5e;
+            height: 95%;
+            padding: 30px 20px;
+            overflow-y: scroll;
+            ::-webkit-scrollbar-thumb{
+                width: 3px;
+            }
+            ::-webkit-scrollbar{
+                width: 3px;
+                background-color: red;
+            }
+            @media (max-width: 768px) {
+                display: none;
+            }
+            ul li{
+                display: flex;
+                align-items: center;
+                margin-bottom: 4px;
+                transition: 0.3s;
+                padding: 5px 8px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                }
+
+                &:hover{
+                    background-color: #ffe1e6;
+                    cursor: pointer;
+                }
+            }
+        }
+        .slider{
+            flex: 4;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            .react-multi-carousel-item{
+                align-items: center;
+                display: flex;
+                .box{
+                    display: flex;
+                    align-items: center;
+                    @media (max-width:425px) {
+                        flex-direction: column;
+                    }
+                    .left{
+                        .homeSliderH1{
+                            font-size: 45px;
+                            line-height: 55px;
+                            margin: 50px 0 20px;
+                            @media (max-width:768px) {
+                                font-size: 35px;
+                                line-height: unset;
+                            }
+                        }
+                        .homeSliderP{
+                            margin: 20px 0;
+                        }
+                        .homeSliderBtn{
+                            background: #e94560;
+                            border-radius: 5px;
+                            color: #fff;
+                            font-weight: 700;
+                            padding: 13px 40px;
+                            border: none;
+                            cursor: pointer;
+                        }
+                        @media(max-width:768px){
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .right{
+                        img{
+                            @media (max-width:768px) {
+                                max-width: 100%;
+                                width: 140px;
+                            }
+                        }
+                    }
+                }
+            }
+            @media (max-width: 768px) {
+                flex: 10;
+            }
+        }
+    }
+}
+
+// .react-multiple-carousel__arrow{
+//     display: none !important;
+// }
+

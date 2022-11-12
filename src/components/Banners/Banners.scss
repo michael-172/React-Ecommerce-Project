@@ -1,0 +1,22 @@
+.Banners{
+    display: flex;
+    justify-content: center;
+    background-color: #f6f9fc;
+    height: 400px;
+    padding: 40px 0px;
+    .container{
+        width: 90%;
+        display: flex;
+        gap: 20px;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        img.first{
+            width: 25%;
+        }
+        img.last{
+            width: 75%;
+        }
+    }
+}

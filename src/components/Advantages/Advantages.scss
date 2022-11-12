@@ -1,0 +1,35 @@
+.advantages{
+    display: flex;
+    justify-content: center;
+    background-color: #f6f9fc;
+    height: 350px;
+    padding: 40px 0px;
+    .container{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        .card{
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgb(3 0 71 / 9%);
+            margin: 10px;
+            padding: 20px;
+            position: relative;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            i{
+                padding: 23px 20px;
+                background: #EEE;
+                border-radius: 50%;
+                color: #393939;
+            }
+            span{
+                text-align: center;
+            }
+        }
+    }
+}
